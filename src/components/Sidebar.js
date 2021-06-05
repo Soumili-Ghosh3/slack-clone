@@ -20,7 +20,7 @@ function Sidebar(props) {
         <Container>
             <WorkspaceContainer>
                 <Name>
-                    Helloooo
+                    Workspace
                 </Name>
                 <NewMessage>
                     <AddCircleOutlineIcon />
