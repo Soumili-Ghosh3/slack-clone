@@ -20,7 +20,6 @@ function Chat({user}) {
         .orderBy('timestamp', 'asc')
         .onSnapshot((snapshot) => {
             let messages = snapshot.docs.map((doc) => doc.data());
-            console.log(messages);
             setMessages(messages);
         })
     }
@@ -34,7 +33,6 @@ function Chat({user}) {
                 userImage: user.photo
             }
             db.collection('rooms').doc(channelId).collection('messages').add(payload);
-            console.log(payload);
         }
     }
 

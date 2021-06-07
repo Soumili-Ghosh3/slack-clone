@@ -12,7 +12,6 @@ function Sidebar(props) {
 
     const goToChannel = (id) => {
         if(id){
-            console.log(id);
             history.push(`/room/${id}`)
         }
     }
